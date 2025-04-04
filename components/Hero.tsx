@@ -9,7 +9,7 @@ const Hero = () => {
   return (
    <section className='justify-center items-center
     flex'>
-    <div className='w-fit xl:w-11/12 h-fit  bg-secondary rounded-xl mt-28 '>
+    <div className='w-fit xl:w-11/12 h-fit   bg-secondary rounded-xl mt-28 mr-2 ml-2 sm:mr-0 sm:ml-0'>
     <div className='flex gap-4 relative p-14 '>
       <motion.div
             initial={{ opacity: 0, y: 30 }}
