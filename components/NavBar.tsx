@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { Button } from './ui/button';
-import { CalendarIcon, Contact, GithubIcon, LinkedinIcon, Mail, Phone } from 'lucide-react';
+import { CalendarIcon, Contact, GithubIcon, LinkedinIcon, Mail, Package2, Phone } from 'lucide-react';
 import Link from 'next/link';
 
 import {
@@ -42,6 +42,11 @@ const NavBar = () => {
               </Button>
             </Link>
           </LinkPreview>
+           <Button
+                className="bg-black cursor-pointer text-white hover:-translate-y-1 hover:bg-[var(--color-hover)] transition-transform duration-300 flex gap-2"
+              >
+                Packages <Package2 size={18} />
+              </Button>
 
           <HoverCard>
   <HoverCardTrigger asChild>
