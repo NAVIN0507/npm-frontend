@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { Button } from './ui/button'
-import { GithubIcon } from 'lucide-react'
+import { Contact, GithubIcon } from 'lucide-react'
 import Link from 'next/link'
 
 const NavBar = () => {
@@ -14,7 +14,7 @@ const NavBar = () => {
         </div>
         <div className='flex gap-4'>
         <Link href="https://github.com/NAVIN0507"><Button className='bg-green-700 cursor-pointer hover:-translate-y-2 duration-500 ease-linear'>GitHub <GithubIcon /></Button></Link>
-          
+        <Button className='bg-white text-black cursor-pointer hover:-translate-y-2 duration-500 ease-linear hover:bg-white hover:text-black'>Contact <Contact/></Button>  
         </div>
     </nav>
 </header>
