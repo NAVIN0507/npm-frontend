@@ -23,12 +23,12 @@ const Hero = () => {
   </p>
   <div className="flex  gap-4">
     <a href="#packages">
-      <Button className="bg-[var(--color-accent)] text-white hover:bg-[var(--color-hover)]">
+      <Button className="bg-[var(--color-accent)] text-white hover:bg-[var(--color-hover)] cursor-pointer">
         Explore Packages
       </Button>
     </a>
-    <a href="https://www.npmjs.com/~navin0507" target="_blank" rel="noopener noreferrer">
-      <Button variant="outline" className="border-[var(--color-accent)] text-[var(--color-accent)] hover:bg-[var(--color-secondary)]">
+    <a href="https://www.npmjs.com/package/@navin0507/string-utilsmns" target="_blank" rel="noopener noreferrer">
+      <Button variant="outline" className="border-[var(--color-accent)] text-[var(--color-accent)] hover:bg-[var(--color-secondary)] cursor-pointer">
         View on npm
       </Button>
     </a>
