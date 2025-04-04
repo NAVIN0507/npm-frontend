@@ -4,6 +4,13 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+@theme {
+  --color-primary: #0d1117;
+  --color-secondary: #161b22;
+  --color-accent: #58a6ff;
+  --color-text: #e6edf3;
+  --color-hover: #1f6feb;
+}
 
 @theme inline {
   --color-background: var(--background);
