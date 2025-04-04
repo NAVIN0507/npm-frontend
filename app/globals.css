@@ -11,6 +11,16 @@
   --color-text: #dcdfe4;           /* Gentle light gray for comfort */
   --color-hover: #8aadf4;          /* Brighter accent on hover */
 }
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+
  
  @theme inline {
    --color-background: var(--background);
