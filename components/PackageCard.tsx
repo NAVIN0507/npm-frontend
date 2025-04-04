@@ -1,6 +1,10 @@
+"use client"
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+import { Copy, GitBranch, Terminal } from 'lucide-react';
+import { Button } from './ui/button';
 interface PacCardProps{
   name:string;
   description:string;
@@ -20,6 +24,17 @@ const PackageCard = ({name , description , commend , githubRepo , npmLink}:PacCa
   <div className='w-[350px] h-[150px] p-6  py-2 line-clamp-4 rounded-2xl mt-5 bg-primary '>
     <p>{description}</p>
   </div>
+  <Alert className="mt-3 flex flex-col gap-1">
+    
+
+  <AlertDescription className='flex gap-3'>
+    {commend}
+    <Copy className="h-4 w-4"/>
+  </AlertDescription>
+</Alert>
+<Link className='' href={githubRepo}>
+<Button className='mt-4 w-full h-14 bg-[var(--color-accent)] cursor-pointer text-white '><GitBranch/> Github Repositary</Button>
+</Link>
 </div>
 </div>
 </Link>
